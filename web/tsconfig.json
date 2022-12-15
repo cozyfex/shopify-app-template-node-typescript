@@ -1,0 +1,34 @@
+{
+  "include": [
+    "./**/*",
+    "./@types"
+  ],
+  "exclude": [
+    "frontend"
+  ],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "declaration": true,
+    "declarationMap": true,
+    "incremental": true,
+    "sourceMap": true,
+    "alwaysStrict": true,
+    "strict": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./@types"
+    ]
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
